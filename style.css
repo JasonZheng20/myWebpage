@@ -3,6 +3,10 @@ body {
   background-color: #fefeff;
 }
 
+.inactive {
+  display: none !important;
+}
+
 .title {
   font-size: 64px;
   margin: 0px;
@@ -24,30 +28,24 @@ body {
   color: blue;
 }
 
-.nav-container {
-  height: 100vh;
-  width: 2vw;
-  background-color: black;
+.slash {
+  margin: 0px 2vw;
+}
+
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: fixed;
+  height: 85vh;
 }
 
-.nav {
-  margin: 1px 2px;
-  height: calc(25vh - 2px);
-  width: calc(2vw - 4px);
-  background-color: white;
-}
-
-#container {
+.shrunkenContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 15vh;
 }
 
 #container2 {
@@ -57,22 +55,3 @@ body {
 }
 
 /*buttons on home page*/
-#me {
-  margin: 0px 5vw;
-}
-
-#homepage {
-  background-color: blue;
-}
-
-#goalspage {
-  background-color: purple;
-}
-
-#mepage {
-  background-color: red;
-}
-
-#workpage {
-  background-color: yellow;
-}
