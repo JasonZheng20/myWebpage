@@ -10,8 +10,36 @@ body {
 
 .divider {
   height: 1.5px;
-  width: 50%;
+  width: 50vw;
   background-color: #3a3a3a;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.button {
+
+}
+
+.button:hover {
+  color: blue;
+}
+
+.nav-container {
+  height: 100vh;
+  width: 2vw;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+
+.nav {
+  margin: 1px 2px;
+  height: calc(25vh - 2px);
+  width: calc(2vw - 4px);
+  background-color: white;
 }
 
 #container {
@@ -19,11 +47,32 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 90vh;
 }
 
 #container2 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/*buttons on home page*/
+#me {
+  margin: 0px 5vw;
+}
+
+#homepage {
+  background-color: blue;
+}
+
+#goalspage {
+  background-color: purple;
+}
+
+#mepage {
+  background-color: red;
+}
+
+#workpage {
+  background-color: yellow;
 }
