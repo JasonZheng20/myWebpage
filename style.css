@@ -1,6 +1,7 @@
 body {
   margin: 0;
   background-color: #fefeff;
+  overflow: hidden;
 }
 
 .inactive {
@@ -38,21 +39,27 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 85vh;
-}
+  height: 100vh;
 
-.shrunkenContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 15vh;
+  transition-duration: 1s;
 }
 
 #container2 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#meC {
+  background-color: green;
+}
+
+#resumeC {
+  background-color: red;
+}
+
+#contactC {
+  background-color: yellow;
 }
 
 /*buttons on home page*/
