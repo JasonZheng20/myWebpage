@@ -22,34 +22,29 @@ class App {
 
     this.showContact = this.showContact.bind(this);
     this.contactButton.addEventListener('click', this.showContact);
-
-    this.shrink = this.shrink.bind(this);
   }
 
   showMe() {
+    this.home.style.transform = "translateY(-30vh)";
+    this.me.style.transform = "translateY(-100vh)";
     this.me.classList.remove('inactive');
     this.resume.classList.add('inactive');
     this.contact.classList.add('inactive');
-    this.shrink();
   }
 
   showResume() {
+    this.home.style.transform = "translateY(-30vh)";
     this.me.classList.add('inactive');
     this.resume.classList.remove('inactive');
     this.contact.classList.add('inactive');
-    this.shrink();
+    // this.shrink();
   }
 
   showContact() {
+    this.home.style.transform = "translateY(-30vh)";
     this.me.classList.add('inactive');
     this.resume.classList.add('inactive');
     this.contact.classList.remove('inactive');
-    this.shrink();
-  }
-
-  shrink() {
-    console.log('hi');
-    this.home.classList.remove('container');
-    this.home.classList.add('shrunkenContainer');
+    // this.shrink();
   }
 }
