@@ -14,6 +14,15 @@ body {
   margin-top: 25px;
 }
 
+.name {
+  font-size: 48px;
+  letter-spacing: 5px;
+  font-stretch: extra-expanded;
+  margin: 30px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
 .divider {
   height: 1.5px;
   width: 50vw;
@@ -34,14 +43,46 @@ body {
   margin: 0px 2vw;
 }
 
+.highlighted {
+  color: blue;
+}
+
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-
+  height: 95vh;
   transition-duration: 1s;
+}
+
+.container3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 82vh;
+  width: 100vw;
+  position: fixed;
+  top: 100vh;
+  transition-duration: 1s;
+}
+
+.half {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.myPic {
+  width: 80%;
+  height: 60%;
+  background-color: #3a3a3a;
+}
+
+.para {
+  width: 80%;
 }
 
 #container2 {
@@ -51,15 +92,18 @@ body {
 }
 
 #meC {
-  background-color: green;
+  background-color: #f7f7f7;
+  /*opacity: 0.1;*/
 }
 
 #resumeC {
-  background-color: red;
+  background-color: #f7f7f7;
+  /*opacity: 0.1;*/
 }
 
 #contactC {
-  background-color: yellow;
+  background-color: #f7f7f7;
+  /*opacity: 0.1;*/
 }
 
 /*buttons on home page*/
